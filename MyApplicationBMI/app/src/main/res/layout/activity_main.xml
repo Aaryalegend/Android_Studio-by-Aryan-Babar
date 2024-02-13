@@ -1,0 +1,60 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:layout_gravity="center"
+    android:padding="16dp"
+    tools:context=".MainActivity"
+    android:background="#f5f5dc"
+    tools:ignore="ExtraText">
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center"
+        android:textStyle="bold"
+        android:fontFamily="@font/poppins_bold"
+        android:textSize="45dp"
+        android:text="BMI Calculator" />
+
+    <ImageView
+        android:id="@+id/appLogo"
+        android:layout_width="match_parent"
+        android:layout_height="265dp"
+        android:src="@drawable/bmiaryan"
+        android:layout_marginBottom="20dp" />
+
+    <EditText
+        android:id="@+id/weightEditText"
+        android:layout_width="match_parent"
+        android:layout_height="60dp"
+        android:hint="Enter Weight (kg)"
+        android:inputType="numberDecimal" />
+
+    <EditText
+        android:id="@+id/heightEditText"
+        android:layout_width="match_parent"
+        android:layout_height="60dp"
+        android:hint="Enter Height (cm)"
+        android:inputType="numberDecimal" />
+
+    <Button
+        android:id="@+id/calculateButton"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:backgroundTint="#1a59c8"
+        android:layout_marginTop="20dp"
+        android:text="Calculate BMI" />
+
+    <TextView
+        android:id="@+id/resultTextView"
+        android:layout_width="match_parent"
+        android:fontFamily="@font/poppins_bold"
+        android:layout_height="60dp"
+        android:layout_marginTop="25dp"
+        android:text=""
+        android:gravity="center"
+        android:textSize="18sp"/>
+</LinearLayout>
